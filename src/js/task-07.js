@@ -3,4 +3,6 @@ const textEl = document.querySelector("text");
 
 inputEl.addEventListener("input", onChangeText);
 
-function onChangeText(event) {}
+function onChangeText(event) {
+  inputEl.style.fontSize = min;
+}
