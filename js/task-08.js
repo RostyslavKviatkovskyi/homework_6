@@ -17,7 +17,7 @@ function onSubmit(event) {
     alert("Please, enter the data, Bro!");
   } else {
     formData.forEach(() => {
-      console.log({ email, password });
+      // console.log({ email, password });
 
       return {
         email,
@@ -26,4 +26,5 @@ function onSubmit(event) {
     });
     loginFormEl.reset();
   }
+  console.log({ email, password });
 }

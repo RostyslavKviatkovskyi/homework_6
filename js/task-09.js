@@ -7,15 +7,20 @@ function getRandomHexColor() {
 const widgetEl = document.querySelector(".widget");
 const colorEl = document.querySelector(".color");
 const buttonEl = document.querySelector(".change-color");
+const bodyEl = document.querySelector("body");
 
 buttonEl.addEventListener("click", onButtonPress);
 
 // function onButtonPress(event) {
-//   widgetEl.style.backgroundColor = getRandomHexColor();
-//   colorEl.textContent = getRandomHexColor();
+//   console.log(getRandomHexColor());
+//   const color = getRandomHexColor();
+//   widgetEl.style = { backgroundColor: color };
+//   colorEl.textContent = color;
 // }
 
 function onButtonPress(event) {
-  widgetEl.style.backgroundColor = getRandomHexColor();
-  colorEl.textContent = widgetEl.style.backgroundColor;
+  // console.log(getRandomHexColor());
+  const color = getRandomHexColor();
+  bodyEl.style.backgroundColor = color;
+  colorEl.textContent = color;
 }
