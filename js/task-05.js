@@ -8,5 +8,9 @@ const refs = {
 refs.inputEl.addEventListener("input", onImputChange);
 
 function onImputChange(event) {
-  refs.outputEl.textContent = event.currentTarget.value;
+  if (event.currentTarget.value === "") {
+    refs.outputEl.textContent = "Anonymous";
+  } else {
+    refs.outputEl.textContent = event.currentTarget.value;
+  }
 }

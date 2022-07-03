@@ -17,7 +17,7 @@ const galleryContainerEl = document.querySelector(".gallery");
 
 const makeElement = images
   .map(({ url, alt }) => {
-    return `<li><img src = '${url}'; alt = '${alt}'; width = 500px; height = 400px>></li>`;
+    return `<li><img src = '${url}' alt = '${alt}'; width = 500px; height = 400px></li>`;
   })
   .join("");
 
